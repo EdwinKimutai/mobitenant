@@ -1,12 +1,14 @@
 import { StyleSheet } from "react-native";
+import { SIZES, COLORS } from "../constants/theme";
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    width: "100%",
-    textAlign: "center",
+    padding: SIZES.large,
+    borderColor: COLORS.gray,
+    fontSize: SIZES.xxLarge,
   },
-  scrollContainer: {
-    textAlign: "center",
+  Btn: {
+    backgroundColor: COLORS.blue,
   },
 });
-export default style;
+export default styles;

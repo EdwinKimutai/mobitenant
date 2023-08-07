@@ -9,24 +9,22 @@ import {
   RequestExtention,
   Mobitenant,
 } from "../components";
-import { icons } from "react-icons";
+import styles from "../style/style";
 const Home = () => {
   const router = useRouter();
   return (
     <SafeAreaView>
       <Stack.Screen
         options={{
-          headerLeft: () => (
-            <Mobitenant iconUrl={icons.menu} text={company_name} />
-          ),
-          headerLeft: () => <Mobitenant iconUrl={icons.notification} />,
+          headerLeft: () => <Mobitenant />,
+          headerLeft: () => <Mobitenant />,
           headerTitle: "",
         }}
       />
-      <View>
+      <View style={styles.container}>
         <View>
           <TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={[styles.container, styles.Btn]}>
               <NoticeBoard />
             </TouchableOpacity>
             <TouchableOpacity>
