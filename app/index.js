@@ -9,17 +9,15 @@ import {
   RequestExtention,
   Mobitenant,
 } from "../components";
-import { icons } from "react-icons";
+//import  icons  from "react-icons";
 const Home = () => {
   const router = useRouter();
   return (
     <SafeAreaView>
       <Stack.Screen
         options={{
-          headerLeft: () => (
-            <Mobitenant iconUrl={icons.menu} text={company_name} />
-          ),
-          headerLeft: () => <Mobitenant iconUrl={icons.notification} />,
+          headerLeft: () => <Mobitenant />,
+          headerLeft: () => <Mobitenant />,
           headerTitle: "",
         }}
       />
