@@ -6,6 +6,7 @@ import Payment from "./home/Payment/Payment";
 import RequestExtention from "./home/RequestExtention/RequestExtention";
 import ChartRoom from "./home/ChartRoom/ChartRoom";
 import Mobitenant from "./home/Mobitenant/Mobitenant";
+import Track from "./home/Track/Track";
 
 export {
   ChartRoom,
@@ -14,4 +15,5 @@ export {
   Payment,
   RequestExtention,
   Mobitenant,
+  Track,
 };

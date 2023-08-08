@@ -7,7 +7,7 @@ function Mobitenant() {
     <View>
       <TouchableOpacity>
         <Image />
-        <Text>{}</Text>
+        <Text>Mobitenant</Text>
       </TouchableOpacity>
     </View>
   );

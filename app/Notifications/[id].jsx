@@ -7,10 +7,10 @@ const DetailPage = () => {
     <View>
       <Stack.Screen
         options={{
-          headerTitle: `Details of ${id}`,
+          headerTitle: "NOTIFICATIONS",
         }}
       />
-      <Text>My details from :{id}</Text>
+      <Text>Notifications</Text>
     </View>
   );
 };
