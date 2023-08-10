@@ -1,24 +1,38 @@
-import { Link, Redirect } from "expo-router";
+import { Link, Redirect, useRouter } from "expo-router";
 import React from "react";
-import { Text, View, SafeAreaView } from "react-native";
+import { Text, View, SafeAreaView, Pressable } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { Mobitenant, Track, NoticeBoard } from "../../../components";
+import { images } from "../../../constants";
 
 function Home() {
+  const router = useRouter();
   return (
     <SafeAreaView>
-      <View>
-        <View>
-          <Mobitenant />
-        </View>
-        <View>
-          <Track />
-        </View>
-        <View>
-          <NoticeBoard />
-          <Link href="/Payment">Payment</Link>
-        </View>
-      </View>
+      <Mobitenant name="Edwin" apartment="Kwetu homes" homeUrl={images.Home} />
+
+      <Track />
+
+      <Link href="NoticeBoard2" asChild>
+        <Pressable>
+          <Text>Notice Board</Text>
+        </Pressable>
+      </Link>
+      <Link href="/Notifications/1" asChild>
+        <Pressable>
+          <Text>Chartroom</Text>
+        </Pressable>
+      </Link>
+      <Link href="/Payment" asChild>
+        <Pressable>
+          <Text>Pay rent</Text>
+        </Pressable>
+      </Link>
+      <Link href="/" asChild>
+        <Pressable>
+          <Text>Extend RD</Text>
+        </Pressable>
+      </Link>
     </SafeAreaView>
   );
 }

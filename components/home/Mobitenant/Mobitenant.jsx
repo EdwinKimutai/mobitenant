@@ -2,14 +2,15 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styles from "./Mobitenant.style";
 
-function Mobitenant() {
+function Mobitenant({ name, apartment, homeUrl }) {
   return (
-    <View>
-      <TouchableOpacity>
-        <Image />
-        <Text>Mobitenant</Text>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity>
+      <View style={{ width: 10 }}>
+        <Image source={homeUrl} />
+      </View>
+      <Text>Hi,{name}</Text>
+      <Text>{apartment} APARTMENTS</Text>
+    </TouchableOpacity>
   );
 }
 
